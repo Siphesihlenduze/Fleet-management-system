@@ -1,0 +1,44 @@
+﻿<Window x:Class="FleetManagementSystem.Maintainance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FleetManagementSystem"
+        mc:Ignorable="d"
+        Title="Maintainance" Height="650" Width="1000">
+    <Grid>
+        <Image Source="FleetBackground1.jpg" Stretch="Fill"/>
+
+        <Label Content="Vehicle ID" HorizontalAlignment="Left" Margin="56,113,0,0" VerticalAlignment="Top" Foreground="#FF0319A8" FontSize="18"/>
+        <Label Content="Type of service" HorizontalAlignment="Left" Margin="56,207,0,0" VerticalAlignment="Top" Foreground="#FF0319A8" FontSize="18"/>
+        <Label Content="Service date " HorizontalAlignment="Left" Margin="56,160,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF0319A8"/>
+        <Label Content="Procedure code" HorizontalAlignment="Left" Margin="56,254,0,0" VerticalAlignment="Top" Foreground="#FF0319A8" FontSize="18"/>
+        <Label Content="Procedure description" HorizontalAlignment="Left" Margin="56,307,0,0" VerticalAlignment="Top" Foreground="#FF0319A8" FontSize="18"/>
+
+
+        <TextBox x:Name="vehicleBox" HorizontalAlignment="Left" Height="23" Margin="283,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFDEDEDE"/>
+        <!--<TextBox x:Name="serviceDateBox" HorizontalAlignment="Left" Height="23" Margin="283,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFDEDEDE"/>-->
+
+
+        <TextBox x:Name="typeOfServiceBox" HorizontalAlignment="Left" Height="23" Margin="283,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFDEDEDE"/>
+        <TextBox x:Name="procedureCodeBox" HorizontalAlignment="Left" Height="23" Margin="283,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFDEDEDE"/>
+        <TextBox x:Name="procedureDescriptionBox" HorizontalAlignment="Left" Height="23" Margin="283,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="665" Background="#FFDEDEDE"/>
+        <!--<Button Content="Submit" HorizontalAlignment="Left" Margin="642,494,0,0" VerticalAlignment="Top" Width="103" Background="#FF31909B" FontSize="18" FontFamily="Lucida Fax" Height="43"/>-->
+        <Label Content="Maintenance details" HorizontalAlignment="Left" Margin="250,22,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Rockwell Extra Bold" Background="#FFE2DCDC" Opacity="0.72"/>
+        <Button x:Name="gotoMainWindowBtn" Content="Main menu" HorizontalAlignment="Left" Margin="312,538,0,0" VerticalAlignment="Top" Width="306" Background="#FF32919C" Height="43" FontSize="18" FontFamily="Lucida Fax" Click="gotoMainWindowBtn_Click"/>
+
+
+        <Button x:Name="maintenance_insertBtn" Content="insert" HorizontalAlignment="Left" Margin="102,459,0,0" VerticalAlignment="Top"  Width="127" Background="#FF31909B" Height="43" FontSize="18" FontFamily="Lucida Fax" Click="maintenance_insertBtn_Click"/>
+        <Button x:Name="maintenance_updateBtn" Content="update" HorizontalAlignment="Left" Margin="312,459,0,0" VerticalAlignment="Top"  Width="127" Background="#FF31909B" Height="43" FontSize="18" FontFamily="Lucida Fax" Click="maintenance_updateBtn_Click"/>
+        <Button x:Name="maintenance_deleteBtn" Content="delete" HorizontalAlignment="Left" Margin="491,459,0,0" VerticalAlignment="Top"  Width="127" Background="#FF31909B" Height="43" FontSize="18" FontFamily="Lucida Fax" Click="maintenance_deleteBtn_Click"/>
+        <Button x:Name="maintenance_clearBtn" Content="Clear data" HorizontalAlignment="Left" Margin="707,459,0,0" VerticalAlignment="Top"  Width="127" Background="#FF31909B" Height="43" FontSize="18" FontFamily="Lucida Fax" Click="maintenance_clearBtn_Click"/>
+
+
+        <TextBox x:Name="maintenanceSearchBox" HorizontalAlignment="Left" Height="33" Margin="456,356,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243"  Background="#FFDEDEDE"/>
+        <DataGrid x:Name="maintenanceGrid" HorizontalAlignment="Left" Height="175" Margin="456,113,0,0" VerticalAlignment="Top" Width="492"/>
+        <Label Content="code search" HorizontalAlignment="Left" Margin="283,355,0,0" VerticalAlignment="Top" Foreground="#FF0319A8" FontSize="18"/>
+        <DatePicker HorizontalAlignment="Left" Margin="-116,95,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="service_datePicker" HorizontalAlignment="Left" Margin="283,175,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

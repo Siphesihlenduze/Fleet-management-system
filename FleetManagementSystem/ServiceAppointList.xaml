@@ -1,0 +1,18 @@
+﻿<Window x:Class="FleetManagementSystem.ServiceAppointList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FleetManagementSystem"
+        mc:Ignorable="d"
+        Title="ServiceAppointList" Height="450" Width="800">
+    <Grid>
+        <Image Source="FleetBackground1.jpg" Stretch="Fill"/>
+
+        <Label Content="Daily &amp; weekly service appointment list" HorizontalAlignment="Left" Margin="109,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF151D6E" FontFamily="Rockwell Extra Bold" Background="#FFDCDADA" Opacity="0.72"/>
+        <DataGrid HorizontalAlignment="Left" Height="308" Margin="10,101,0,0" VerticalAlignment="Top" Width="772"/>
+        <Button x:Name="GenerateBtn" Content="Generate report" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="279" Height="39" Background="#FF32919C" FontSize="18" FontFamily="Lucida Fax"/>
+        <Button Content="Go back to reports menu" HorizontalAlignment="Left" Margin="535,57,0,0" VerticalAlignment="Top" Width="247" Height="34" Background="#FF32919C" FontFamily="Lucida Fax" FontSize="18"/>
+
+    </Grid>
+</Window>

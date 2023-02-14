@@ -1,0 +1,31 @@
+﻿<Window x:Class="FleetManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FleetManagementSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="car.jpg"/>
+        </Grid.Background>
+        <Image Source="FleetBackground1.jpg" Stretch="Fill"/>
+
+        <Label Content="Welcome to Fast Freight" HorizontalAlignment="Left" Margin="233,10,0,0" VerticalAlignment="Top" Width="366" FontWeight="Bold" FontSize="24" TextOptions.TextHintingMode="Fixed" Background="#FFDCDADA" Height="43" FontFamily="Rockwell Extra Bold" Opacity="0.72"/>
+        <Button x:Name="gotoLoginBtn" Content="Login to your account" HorizontalAlignment="Left" Margin="214,285,0,0" VerticalAlignment="Top" Width="385" FontSize="18" Click="gotoLoginBtn_Click" Height="45" Background="#FF30909B" FontFamily="Lucida Fax" />
+        <Button x:Name="goRegisterBtn" Content="Register an account" HorizontalAlignment="Left" Margin="216,226,0,0" VerticalAlignment="Top" Width="385"  FontSize="18" Click="goRegisterBtn_Click" Height="45" Background="#FF31909B" FontFamily="Lucida Fax" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.246"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <!--<Button x:Name="gotoDasboard" Content="Dasboard" HorizontalAlignment="Left" Margin="214,348,0,0" VerticalAlignment="Top" Width="385" Click="gotoDasboard_Click" Height="45" Background="#FF30909B" FontFamily="Lucida Fax" FontSize="18"/>-->
+        <Image Margin="290,58,248,203" Source="Logo.jpg" Stretch="Fill"/>
+
+    </Grid>
+</Window>
